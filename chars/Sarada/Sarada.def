@@ -1,0 +1,27 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "sarada"
+displayname = "Sarada"
+versiondate = 25/11/2016
+mugenversion = 1.0
+author = "Shingeki No Mugen"
+pal.defaults = 1
+
+[Files]
+sprite = sarada.sff
+anim = sarada.air
+sound = sarada.snd
+cmd = sarada.cmd
+cns = sarada.cns
+stcommon = common1.cns
+st = sarada.cns
+st1 = IA.cns
+st2 = Specials.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

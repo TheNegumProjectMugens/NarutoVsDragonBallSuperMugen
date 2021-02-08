@@ -1,0 +1,68 @@
+Lista de Movimientos.
+
+* Normal:
+
+Basicos:
+
+- Combo 1:   a-a-a
+- Combo 2:   b-b-b
+- Combo 3:   c-c-c
+
+-Air Combo:   a,b or c
+
+Specials
+
+- Rasengan                                    = D,DF,F,a
+- Kage Bunshin no Jutsu                       = D,DB,B,a
+  Kage Bunshin Shuriken Henge                 = D,DB,B,a
+- Fuuma Shuriken (Can be air)                 = D,DF,F,b 
+- Orioke no Jutsu                             = D,DB,B,b
+- Bunshin Rendan                              = D,DF,F,c
+- Bunshin Assault                             = D,DB,B,c
+
+Supers
+
+- Kuchiyose Gamabunta                         = holddown + A
+- Naruto Rendan                               = holddown + B
+- Naruto Ittai Rendan                         = holddown + C
+
+Awakening
+
+(Life <= 1/2 & Powermax) 1 Tail Mode          = hold S
+
+* 1 Tail Mode 
+
+- Combo 1:   a-a-a
+- Combo 2:   b-b-b
+- Combo 3:   c-c-c
+
+-Air Combo:   a,b or c
+
+Specials
+
+- Vermilio Rasengan                           = D,DF,F,a
+- Kyubi Catch                                 = D,DB,B,a
+- Fuuton Balls                                = D,DF,F,b 
+- Fury Counter                                = D,DB,B,b
+- Red Chakra Hand                             = D,DF,F,c
+- Kyubi Assault                               = D,DB,B,c
+
+Supers
+
+- Red Chakra Roar                             = holddown + A
+- Vermilio Odama Rasengan                     = holddown + B
+- Super Chakra Cannon                         = holddown + C
+
+
+
+
+
+
+
+
+
+
+
+
+
+

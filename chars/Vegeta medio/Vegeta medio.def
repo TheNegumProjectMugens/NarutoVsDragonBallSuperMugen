@@ -1,0 +1,52 @@
+; ______________________________________________
+;|Vegeta                                        |
+;|Character Made by: Duende Macabro  ::..       |
+;|Version: Beta 0.30 - 24/10/2005 ::..          |
+;|Started at 25/09/2005 ::..                    |
+;|Contact:                                      |
+;|weaponx_nirvana@yahoo.com.br                  |
+;|http://geocities.yahoo.com.br/rickiecreations |
+;|______________________________________________|
+
+
+[Info]
+name ="Vegeta by DM"
+displayname ="Vegeta"
+versiondate =04,14,2002
+mugenversion =11,01,2001
+author ="Duende Macabro"
+pal.defaults =1,2
+
+
+[Files]
+cmd =command.cmd
+cns =constants.cns
+st =States\basico.cns
+stcommon =common1.cns
+sprite =sprite.sff
+anim =anim.air
+sound =snd.snd
+pal1=Palettes\vegeta1.act
+pal2=Palettes\vegeta2.act
+pal3=Palettes\vegeta3.act
+pal4=Palettes\vegeta4.act
+pal5=Palettes\vegeta5.act
+pal6=Palettes\vegeta6.act
+pal7=Palettes\vegeta7.act
+pal8=Palettes\vegeta8.act
+pal9=Palettes\vegeta9.act
+pal10=Palettes\vegeta10.act
+pal11=Palettes\vegeta11.act
+pal12=Palettes\vegeta12.act
+st1=States\normal.cns
+st2=States\helpers.cns
+st3=States\specials.cns
+st4=States\supers.cns
+st5=States\hipers.cns
+st6=States\ai.cns
+st7=States\combos.cns
+;Paletas
+[Arcade]
+
+intro.storyboard=
+ending.storyboard=..\data\final.def

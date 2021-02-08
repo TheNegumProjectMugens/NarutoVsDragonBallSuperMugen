@@ -1,0 +1,26 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Uchiha Sasuke"
+displayname = "Sasuke"
+versiondate = 12/09/2015
+mugenversion = 01,01,2000
+author = "Ismael De Jesus Perez"
+pal.defaults = 1,2,3,4,5,6
+
+[Files]
+sprite = Sasuke.sff
+anim = Sasuke.air
+sound = Sasuke.snd
+cmd = Sasuke.cmd
+cns = add004basic.reb1
+stcommon = common1.cns
+st = add004basic.reb1
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

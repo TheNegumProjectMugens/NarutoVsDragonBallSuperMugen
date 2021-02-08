@@ -1,0 +1,27 @@
+
+[Info]
+name ="Goku Kid"        
+displayname ="Goku" 
+author ="Jordanmaster" 
+versiondate =05,19,2007 
+pal.defaults =1,2,3
+mugenversion=
+
+[Files]
+cmd     =DB.cmd  
+cns     =DB.cns  
+st      =DB.cns
+stcommon =common1.cns 
+sprite  =DB.sff   
+anim    =DB.air   
+sound   =DB.snd 
+pal1=1.act
+pal2=2.act
+pal3=3.act
+pal4=4.act
+st1=AI.cns
+st2=AI.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

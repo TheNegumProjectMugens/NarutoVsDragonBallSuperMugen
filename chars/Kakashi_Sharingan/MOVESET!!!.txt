@@ -1,0 +1,54 @@
+Lista de Movimientos.
+
+Normal:
+
+*Basicos:
+
+- Combo 1:   a-a-a-a
+- Combo 2:   b-b-b-b
+- Combo 3:   c-c-c-c
+
+- Air Combo:   a,b or c
+
+Specials
+
+- Raikiri                                    = D,DF,F,a
+- Doton Tsuiga no Jutsu                      = D,DB,B,a
+- Raiju Hashiri no Jutsu                     = D,DF,F,b 
+- Doton Doryuuheki                           = D,DB,B,b
+- Kakashi no Taijutsu                        = D,DF,F,c
+- Genjutsu Sharingan                         = D,DB,B,c
+
+Supers
+
+- Suiton Daibakufu no Jutsu                  = holddown + A
+- Raikiri So Raising                         = holddown + B
+- Kamui                                      = holddown + C
+
+Awakening
+
+(Life <= 1/2 & Powermax) Normal Awakening     = hold S
+
+Specials
+
+- Raiden                                     = D,DF,F,a
+- Raiton Bushin                              = D,DB,B,a
+- Raiju Hashiri no Jutsu                     = D,DF,F,b 
+- Doton Doryuuheki                           = D,DB,B,b
+- Kakashi no Taijutsu                        = D,DF,F,c
+- Genjutsu Sharingan                         = D,DB,B,c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

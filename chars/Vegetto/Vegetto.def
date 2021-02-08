@@ -1,0 +1,20 @@
+[Info]
+name="Vegetto "
+displayname="Vegetto"
+versiondate=2017
+mugenversion=1.0
+author="Dic2"
+pal.defaults=1,2
+[Files]
+sprite=Vegetto.sff
+sound=Sounds.snd
+anim=Vegetto.air
+cmd=Vegetto.cmd
+cns=Vegetto.cns
+st=Vegetto.cns
+stcommon=common1.cns
+pal1=Vegetto.act
+st1=Basic.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

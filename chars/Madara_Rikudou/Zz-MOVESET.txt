@@ -1,0 +1,34 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Combo 3
+
+Air A,B or C - Air Combo
+
+S - Power Charge
+
+S - Awakening (Life <= 1/2 & Powermax) NORMAL AWAKENING
+
+SPECIALS:
+
+D,DF,F,a - Gudodama Blast
+
+D,DB,B,a - Senpo Inton Raiha
+
+D,DF,F,b - Limbo
+
+D,DB,B,b - Limbo Bunshin no Jutsu
+
+D,DF,F,c - Black World
+
+D,DB,B,c - Kamui
+
+SUPERS: 
+
+Down + A - Mugen Tsukuyomi
+
+Down + B - Chibaku Tensei Rain
+
+Down + C - Shin Jukai Koutan

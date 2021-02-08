@@ -1,0 +1,280 @@
+;---------------------------------------------------------------------------
+; Jump Start
+[Statedef 40]
+type    = S
+physics = S
+ctrl = 0
+sprpriority = 1
+facep2 = 1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,0
+volume = 0
+
+[State 40, 1]
+type = changeanim
+trigger1 = time = 0
+value = 40+(var(7)*10000)
+
+[State 40, 1]
+type = VarSet
+trigger1 = Time = 0
+sysvar(1) = 0
+
+[State 40, 2]
+type = VarSet
+trigger1 = command = "holdfwd"
+sysvar(1) = 1
+
+[State 40, 3]
+type = VarSet
+trigger1 = command = "holdback"
+sysvar(1) = -1
+
+[State 40, 4]
+type = VelSet
+trigger1 = AnimTime = 0
+x = ifelse(sysvar(1)=0, const(velocity.jump.neu.x), ifelse(sysvar(1)=1, const(velocity.jump.fwd.x), const(velocity.jump.back.x)))
+y = const(velocity.jump.y)
+
+[State 40, 5]
+type = VelSet
+trigger1 = AnimTime = 0
+trigger1 = prevstateno = 100 ;RUN_FWD
+trigger1 = sysvar(1) = 1
+x = const(velocity.runjump.fwd.x)
+
+[State 0]
+type = Explod
+trigger1 = Animtime = 0
+anim = 1400
+pos = 0,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = -1
+ownpal = 1
+scale = 0.35,0.5
+
+[state 0]
+type = playsnd
+trigger1 = animtime = 0
+value = S1,1
+
+[State 40, 6]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+;---------------------------------------------------------------------------
+; AirJump Start
+[Statedef 45]
+type    = A
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State 45, 1]
+type = ChangeAnim
+trigger1 = SelfAnimExist(44+(var(7)*10000))
+value = 44+(var(7)*10000)
+
+[State 45, 2]
+type = ChangeAnim
+trigger1 = !SelfAnimExist(44+(var(7)*10000))
+value = 41+(var(7)*10000)
+
+[State 45, 3]
+type = VarSet
+trigger1 = Time = 0
+sysvar(1) = 0
+
+[State 45, 4]
+type = VarSet
+trigger1 = command = "holdfwd"
+sysvar(1) = 1
+
+[State 45, 5]
+type = VarSet
+trigger1 = command = "holdback"
+sysvar(1) = -1
+
+[State 45, 6]
+type = VelSet
+trigger1 = Time = 2
+x = ifelse(sysvar(1)=0, const(velocity.airjump.neu.x), ifelse(sysvar(1)=1, const(velocity.airjump.fwd.x), const(velocity.airjump.back.x)))
+y = const(velocity.airjump.y)
+
+[State 0]
+type = Explod
+trigger1 = Time = 1
+anim = 1400
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = -1
+ownpal = 1
+scale = 0.35,0.5
+
+[state 0]
+type = playsnd
+trigger1 = time = 0
+value = S1,1
+
+[State 45, 7]
+type = ChangeState
+trigger1 = Time = 2
+value = 50
+ctrl = 1
+;---------------------------------------------------------------------------
+; Jump Land
+[Statedef 52]
+type    = S
+physics = S
+ctrl = 0
+anim = 47
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,1
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 1400
+ID = 1400
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.38,.38
+sprpriority = 0
+
+[State 52, 1]
+type = VelSet
+trigger1 = Time = 0
+y = 0
+
+[State 52, 2]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 52, 3]
+type = CtrlSet
+trigger1 = Time = 3
+value = 1
+
+[State 52, 4]
+type = VelSet
+trigger1 = abs(vel x) < Const(movement.stand.friction.threshold)
+x = 0
+
+[State 52, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Run forward
+[StateDef 100]
+type = S
+physics = N
+ctrl = 1
+velset = 0,0
+anim = 100+(var(7)*10000)
+
+[state 0]
+type = velset
+trigger1 = time = 0
+x = 8+var(7)*1
+
+[State 0]
+type = AssertSpecial
+trigger1 = 1
+flag = NoWalk
+
+[state 0]
+type = playsnd
+trigger1 = time = 0
+value = S1,4
+
+[State 0]
+type = Explod
+trigger1 = timemod = 4,0
+anim = 1200
+pos = -10,8
+postype = p1  ;p2,front,back,left,right
+removetime = -2
+ontop = 1
+scale = 0.2,0.2
+ownpal = 1
+supermove = 1
+
+[State 0]
+type = ChangeState
+triggerall = var(10) = 1
+trigger1 = time = 30
+value = 0
+ctrl = 1
+
+[State 0]
+type = ChangeState
+triggerall = var(10) = 0
+trigger1 = Command != "holdfwd"
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+; Hop backwards
+[StateDef 105]
+type = A
+physics = N
+ctrl = 1
+velset = 0,0
+anim = 105+(var(7)*10000)
+
+[state 0]
+type = velset
+trigger1 = time = 0
+x = -6
+y = -3
+
+[State 0]
+type = AssertSpecial
+trigger1 = 1
+flag = NoWalk
+
+[state 0]
+type = playsnd
+trigger1 = time = 0
+value = S1,1
+
+[State 0]
+type = Explod
+trigger1 = time = 0
+anim = 1200
+pos = 0,8
+postype = p1  ;p2,front,back,left,right
+removetime = -2
+ontop = 1
+scale = 0.2,0.2
+ownpal = 1
+supermove = 1
+facing = -1
+
+[State 0]
+type = ChangeState
+trigger1 = animtime = 0
+value = 50
+ctrl = 1
+;---------------------------------------------------------------------------

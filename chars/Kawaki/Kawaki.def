@@ -1,0 +1,26 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Kawaki"
+displayname ="Kawaki"
+versiondate =12/09/2015
+mugenversion = 
+author ="CobraG6"
+pal.defaults =1
+
+[Files]
+sprite =kawaki.sff
+anim =kawaki.air
+sound =kawaki.snd
+cmd =kawaki.cmd
+cns =add004basic.reb1
+stcommon =common1.cns
+st =add004basic.reb1
+pal1=1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

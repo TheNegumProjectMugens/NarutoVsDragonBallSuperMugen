@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "SSJ2-GOKU by BARDOCK"
+displayname = "Toppo"
+versiondate = 18.04.17
+mugenversion = 
+author = "Diogo Studios Mugen e Luis 17 Mugen"
+pal.defaults = 1
+
+[Files]
+sprite = SSJ2-GOKU.sff
+anim = SSJ2-GOKU.air
+sound = SSJ2-GOKU.snd
+cmd = SSJ2-GOKU.cmd
+cns = SSJ2-GOKU.cns
+stcommon = SSJ2-GOKU1.cns
+st = SSJ2-GOKU.cns
+st1 = defesa.cns
+st2 = seq-teste.cns
+st3 = aura.cns
+pal1 = SSJ2-GOKU1.act
+pal2 = SSJ2-GOKU.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = final\final.def

@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Otsutsuki Momoshiki"
+displayname ="Momoshiki"
+versiondate =
+mugenversion = 1.0
+author ="Bills Dios"
+pal.defaults =1
+
+[Files]
+sprite =Momoshiki.sff
+anim =Momoshiki.air
+sound =Momoshiki.snd
+cmd =Momoshiki.cmd
+cns =Momoshiki.cns
+stcommon =common1.cns
+st =Momoshiki.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+st4=Fusion Mode.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

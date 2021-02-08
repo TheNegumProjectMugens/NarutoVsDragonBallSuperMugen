@@ -1,0 +1,28 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Boruto"
+displayname = "Boruto"
+versiondate = 25/11/2016
+mugenversion = 1.0
+author = "Shingeki No Mugen"
+pal.defaults = 1
+
+[Files]
+sprite = Boruto.sff
+anim = Boruto.air
+sound = Boruto.snd
+cmd = Boruto.cmd
+cns = Boruto.cns
+stcommon = common1.cns
+st = Boruto.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = KageBunshin.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

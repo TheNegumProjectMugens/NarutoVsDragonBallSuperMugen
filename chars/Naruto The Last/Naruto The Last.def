@@ -1,0 +1,26 @@
+[Info]
+name = "Naruto"
+displayname = "Naruto"
+versiondate = 19/01/2016
+mugenversion = 
+author = "Bills Dios"
+pal.defaults =1,2,3,4,5,6
+
+[Files]
+sprite=Naruto.sff
+sound=Naruto.snd
+anim=Naruto.air
+cmd=Naruto.cmd
+cns=Naruto.cns
+st=Naruto.cns
+stcommon=common1.cns
+pal1=1.act
+;pal2=2.act
+st1=Kage Bunshin.cns
+st2=Combos y Tecnicas.cns
+st3=KCM-Combos y Tecnicas.cns
+st4=Kyubi Invocacion.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

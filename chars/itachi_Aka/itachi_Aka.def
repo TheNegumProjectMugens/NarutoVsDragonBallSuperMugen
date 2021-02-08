@@ -1,0 +1,31 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Uchiha itachi"
+displayname = "itachi"
+versiondate = 9/08/2015
+mugenversion = 
+author = "ilyes  djadel (shingeki no mugen)"
+pal.defaults = 1,2,3,4,5,6
+
+[Files]
+sprite = itachi.sff
+anim = itachi.air
+sound = itachi.snd
+cmd = itachi.cmd
+cns = itachi.cns
+stcommon = common1.cns
+st = itachi.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+st4 = SusanooLV3.cns
+st5 = add.cns
+st6 = Susanoo_Perfecto.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

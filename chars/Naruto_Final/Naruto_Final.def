@@ -1,0 +1,38 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Uzumaki Naruto"
+displayname = "Naruto"
+versiondate = 17/03/2015
+mugenversion = 
+author = "Mikel8888"
+pal.defaults = 1,2,3,4,5,6
+
+[Files]
+sprite = Naruto.sff
+anim = Naruto.air
+sound = Naruto.snd
+cmd = Naruto.cmd
+cns = Naruto.cns
+stcommon = common1.cns
+st = Naruto.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+st4 = KageBunshin.cns
+st5 = KCM_Mode.cns
+st6 = Bijuu_Mode.cns
+st7 = Ashura_Mode.cns
+pal1 = 1.act
+pal2 = 2.act
+pal3 = 3.act
+pal4 = 4.act
+pal5 = 5.act
+pal6 = 6.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

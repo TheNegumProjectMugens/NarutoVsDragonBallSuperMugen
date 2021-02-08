@@ -1,0 +1,73 @@
+Lista de Movimientos.
+
+*Normal:
+
+Basicos:
+
+- Combo 1:   a-a-a
+- Combo 2:   b-b-b-b
+- Combo 3:   c-c-c
+
+- Air Combo:   a,b or c
+
+Specials:
+
+- Dynamic Entry                                  = D,DF,F,a
+- Kuchiyose Ningame                              = D,DB,B,a
+- Kunai Throw                                    = D,DF,F,b
+- Konoha Counter                                 = D,DB,B,b
+- Geki Konoha Kongoriki Senpu                    = D,DB,B,c
+- Kage Buyo                                      = D,DF,F,c
+
+Supers:
+
+- Senpu Rekkyaku                                 = holddown + A
+- Asa Kujaku                                     = holddown + B
+- Hirudora                                       = holddown + C
+
+*Instand Awakening
+
+(Awakening Bar <= 1/2) Hachimon Tonko Mode       = holddown + S
+
+*Normal:
+
+Basicos:
+
+- Combo 1:   a-a-a
+- Combo 2:   b-b-b-b
+- Combo 3:   c-c-c
+
+- Air Combo:   a,b or c
+
+Specials:
+
+- Sekizou Isoku                                  = D,DF,F,a
+- Dynamic Entry                                  = D,DB,B,a
+- Sekizou Gosoku                                 = D,DF,F,b
+- Gohorairaku                                    = D,DB,B,b
+- Sekizou Sansoku                                = D,DB,B,c
+- Kage Buyo                                      = D,DF,F,c
+
+Supers:
+
+- Asa Kujaku                                     = holddown + A
+- Hirudora                                       = holddown + B
+- Yagai                                          = holddown + C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

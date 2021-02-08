@@ -1,0 +1,34 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Otsutsuki Toneri"
+displayname ="Toneri"
+versiondate =09/01/2016
+mugenversion = 
+author ="Bills Dios"
+pal.defaults =1
+
+[Files]
+sprite =Toneri.sff
+anim =Toneri.air
+sound =Toneri.snd
+cmd =Toneri.cmd
+cns =Toneri.cns
+stcommon =common1.cns
+st =Toneri.cns
+pal1=1.act
+;pal2=2.act
+;pal3=3.act
+;pal4=4.act
+;pal5=5.act
+;pal6=6.act
+st1=IA.cns
+st2=Técnicas.cns
+st3=Técnicas Modo TCM.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

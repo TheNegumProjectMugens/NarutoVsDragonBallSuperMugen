@@ -1,0 +1,70 @@
+Lista de Movimientos.
+
+*Normal:
+
+Basicos:
+
+- Combo 1:   a-a-a
+- Combo 2:   b-b-b
+- Combo 3:   c-c-c
+
+- Air Combo:   a,b or c
+
+Specials
+
+- Chidori                                     = D,DF,F,a
+- Katon Gokakyu no Jutsu (can be air)         = D,DB,B,a
+- Fuuma Shuriken                              = D,DF,F,b 
+- Katon Housenka no Jutsu (can be air)        = D,DB,B,b
+- Sasuke no Taijutsu                          = D,DF,F,c
+- Genjutsu Sharingan                          = D,DB,B,c
+
+Supers
+
+- Katon Gouenka No Jutsu                      = holddown + A
+- Shishi Rendan                               = holddown + B
+- Katon Gouryuuka No Jutsu                    = holddown + C
+
+Awakening
+
+(Life <= 1/2 & Powermax) Curse State 2 Mode   = hold S
+
+*Curse State 2 Mode
+
+Basicos:
+
+- Combo 1:   a-a-a
+- Combo 2:   b-b-b
+- Combo 3:   c-c-c
+
+- Air Combo:   a,b or c
+
+Specials
+
+- Black Chidori                               = D,DF,F,a
+- Katon Gokakyu no Jutsu (can be air)         = D,DB,B,a
+- Katon Housenka no Jutsu (can be air)        = D,DF,F,b 
+- CS2 Defense                                 = D,DB,B,b
+- Sasuke no Taijutsu + Katon Gouryuuka        = D,DF,F,c
+- Genjutsu Sharingan                          = D,DB,B,c
+
+Supers
+
+- Katon Gouenka No Jutsu                      = holddown + A
+- Black Chidori Storm                         = holddown + B
+- Katon Gouryuuka No Jutsu                    = holddown + C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
