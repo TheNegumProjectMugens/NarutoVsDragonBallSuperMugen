@@ -1,0 +1,230 @@
+;                        EDITED STAGE
+;=============================================================
+;  STAGE INFORMATION :
+;
+;  Resolution : 1280 * 720
+;  Mugen Version : Mugen 1.1 only
+;  Versiondate : Septiembre,2014
+;  Reedicion : Daniel's 
+;
+;=============================================================
+
+[Info]
+Name = "Throne"
+Author = "Alice"
+mugenversion=1.1
+
+[Camera]
+boundleft = -250
+boundright = 250
+boundhigh = -700
+boundlow = 0
+verticalfollow = .70
+floortension = 100
+tension = 200
+tensionhigh = 540
+tensionlow = 60
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = .9
+zoomout = .5
+
+
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+p1startx = -280         ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 280
+p2starty = 0
+p2facing = -1
+
+;--- Player 3 ---
+p3startx = -400
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx = 400
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000 ;Left bound (x-movement)
+rightbound =  4000 ;Right bound
+
+[Bound]
+screenleft = 80   ;Dist from left of screen that player can move to
+screenright = 80   ;Right edge
+
+[StageInfo]
+zoffset = 665
+autoturn = 1
+resetBG = 1
+localcoord = 1280,720
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 0
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+intensity = 20
+
+[Music]
+bgmusic =sound/Karakuri Defense System.mp3
+bgmvolume = 255
+
+[BGdef]
+spr = Throne.sff
+debugbg = 0
+;-----------------------Black
+
+;------------------------
+[BG sky1]
+type  = normal
+spriteno = 1, 4
+start = 0,830
+delta = .5, .8
+mask = 0
+trans = none
+layerno = 0
+velocity = -.3,0
+tile = 1,0
+tilespacing = 0,0
+;-------------------
+[BG mountains]
+type  = normal
+spriteno = 1, 3
+start = 0,830
+delta = .7, 1
+mask = 1
+trans = none
+layerno = 0
+
+[BG mountains]
+type  = normal
+spriteno = 1, 5
+start = 0,830
+delta = .7, 1
+mask = 1
+trans = none
+layerno = 0
+
+
+
+;----------------------
+[BG top2]
+type  = normal
+spriteno = 1, 2
+start = 0,830
+delta = 1, 1
+mask = 0
+trans = none
+layerno = 0
+
+[BG top1]
+type  = normal
+spriteno = 1, 1
+start = 0,830
+delta = 1, 1
+mask = 0
+trans = none
+layerno = 0
+
+[BG Floor]
+type  = normal
+spriteno = 1, 0
+start = 0,830
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 0
+
+;---------------------------sphere
+
+[BG 0]
+type = anim
+actionno = 1
+layerno = 0
+start = -235, 206
+delta = 1,1
+
+[BG 0]
+type = anim
+actionno = 1
+layerno = 0
+start = 235, 206
+delta = 1,1
+
+[BG 0]
+type = anim
+actionno = 1
+layerno = 0
+start = -104, 70
+delta = 1,1
+
+[BG 0]
+type = anim
+actionno = 1
+layerno = 0
+start = 104, 70
+delta = 1,1
+
+
+[Begin action 1]
+3, 0, 0,0, 7,,A
+3, 1, 0,0, 7,,A
+3, 2, 0,0, 7,,A
+3, 3, 0,0, 7,,A
+3, 4, 0,0, 7,,A
+3, 5, 0,0, 7,,A
+3, 6, 0,0, 7,,A
+3, 7, 0,0, 7,,A
+3, 6, 0,0, 7,,A
+3, 5, 0,0, 7,,A
+3, 4, 0,0, 7,,A
+3, 3, 0,0, 7,,A
+3, 2, 0,0, 7,,A
+3, 1, 0,0, 7,,A
+
+;----------fire
+
+[BG 0]
+type = anim
+actionno = 2
+layerno = 0
+start = -539, 305
+delta = 1,1
+
+[BG 0]
+type = anim
+actionno = 2
+layerno = 0
+start = 539, 305
+delta = 1,1
+
+[Begin action 2]
+2, 0, 0,0, 3,,A
+2, 1, 0,0, 3,,A
+2, 2, 0,0, 3,,A
+2, 3, 0,0, 3,,A
+2, 4, 0,0, 3,,A
+2, 5, 0,0, 3,,A
+2, 6, 0,0, 3,,A
+2, 7, 0,0, 3,,A
+2, 8, 0,0, 3,,A
+2, 9, 0,0, 3,,A
+2, 10, 0,0, 3,,A
+2, 11, 0,0, 3,,A
+2, 12, 0,0, 3,,A
+2, 13, 0,0, 3,,A
+2, 14, 0,0, 3,,A

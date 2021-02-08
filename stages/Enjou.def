@@ -1,0 +1,1201 @@
+[Info]
+Name = "Enjou"
+displayname="Enjou"
+Author = "Alice"
+mugenversion=1.1
+
+[Camera]
+startx=0
+starty=0
+boundleft = -250
+boundright = 250
+boundhigh = -400
+boundlow = 0
+verticalfollow = .70
+floortension = 100
+tension = 200
+tensionhigh = 600
+tensionlow = 60
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = .9
+zoomout = .48
+
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+p1startx = -280         ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 280
+p2starty = 0
+p2facing = -1
+
+;--- Player 3 ---
+p3startx = -400
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx = 400
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000 ;Left bound (x-movement)
+rightbound =  4000 ;Right bound
+
+[Bound]
+screenleft = 80  ;Dist from left of screen that player can move to
+screenright = 80   ;Right edge
+
+[StageInfo]
+zoffset = 665
+autoturn = 1
+resetBG = 0
+localcoord = 1280,720
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/The The The Strongest Edit.mp3
+bgmvolume = 255
+
+[BGdef]
+spr = Enjou.sff
+debugbg = 0
+
+;-------------------------start
+;--------------------------black
+[BG 1]
+type  = normal
+spriteno = 10, 0
+start = 0, -50
+delta = 0, 0
+mask = 0
+tile = 1,1
+tilespacing = 0,0
+trans = none
+
+;-------------------------sky
+
+[BG Sky1]
+type  = normal
+spriteno = 1, 4
+start = 0,830
+delta = .8, .8
+mask = 0
+trans = none
+layerno = 0
+tile = 1,0
+tilespacing = 0,0 
+velocity = 1,0
+
+;------------------------
+[BG Mountains]
+type  = normal
+spriteno = 1, 3
+start = 0,830
+delta = .9, .9
+mask = 1
+trans = none
+layerno = 0
+
+;-------------------------
+[BG ceiling1]
+type  = normal
+spriteno = 1, 1
+start = 0,830
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 0
+
+;------------------------
+[BG Floor]
+type  = normal
+spriteno = 1, 0
+start = 0,830
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 0
+
+;-------------------------------fire
+
+[BG 0];small
+type = anim
+actionno = 2
+layerno = 0
+start = 105, 350
+delta = 1,1
+
+
+[Begin action 2]
+5, 0, 0,0, 2,,A
+5, 1, 0,0, 2,,A
+5, 2, 0,0, 2,,A
+5, 3, 0,0, 2,,A
+5, 4, 0,0, 2,,A
+5, 5, 0,0, 2,,A
+5, 6, 0,0, 2,,A
+5, 7, 0,0, 2,,A
+5, 8, 0,0, 2,,A
+5, 9, 0,0, 2,,A
+5, 10, 0,0, 2,,A
+5, 11, 0,0, 2,,A
+5, 12, 0,0, 2,,A
+5, 13, 0,0, 2,,A
+5, 14, 0,0, 2,,A
+
+
+[BG 0];middle right
+type = anim
+actionno = 3
+layerno = 0
+start = 565, 650
+delta = 1,1
+
+[BG 0];middle left1
+type = anim
+actionno = 3
+layerno = 0
+start = -725, 563
+delta = 1,1
+
+
+[Begin action 3]
+6, 0, 0,0, 2,,A
+6, 1, 0,0, 2,,A
+6, 2, 0,0, 2,,A
+6, 3, 0,0, 2,,A
+6, 4, 0,0, 2,,A
+6, 5, 0,0, 2,,A
+6, 6, 0,0, 2,,A
+6, 7, 0,0, 2,,A
+6, 8, 0,0, 2,,A
+6, 9, 0,0, 2,,A
+6, 10, 0,0, 2,,A
+6, 11, 0,0, 2,,A
+6, 12, 0,0, 2,,A
+6, 13, 0,0, 2,,A
+6, 14, 0,0, 2,,A
+
+[BG 0];right
+type = anim
+actionno = 4
+layerno = 0
+start = 1195, 643
+delta = 1,1
+
+[BG 0];left
+type = anim
+actionno = 4
+layerno = 0
+start = -1255, 600
+delta = 1,1
+
+[BG 0];middle left2
+type = anim
+actionno = 4
+layerno = 0
+start = -370, 573
+delta = 1,1
+
+
+[Begin action 4]
+6, 8, 0,0, 2,,A
+6, 9, 0,0, 2,,A
+6, 10, 0,0, 2,,A
+6, 11, 0,0, 2,,A
+6, 12, 0,0, 2,,A
+6, 13, 0,0, 2,,A
+6, 14, 0,0, 2,,A
+6, 0, 0,0, 2,,A
+6, 1, 0,0, 2,,A
+6, 2, 0,0, 2,,A
+6, 3, 0,0, 2,,A
+6, 4, 0,0, 2,,A
+6, 5, 0,0, 2,,A
+6, 6, 0,0, 2,,A
+6, 7, 0,0, 2,,A
+
+;-------------------------Ashes
+
+
+[Begin action 5]
+7, 0, 0,0, 3,,A
+7, 1, 0,0, 3,,A
+7, 2, 0,0, 3,,A
+7, 3, 0,0, 3,,A
+7, 4, 0,0, 3,,A
+7, 5, 0,0, 3,,A
+7, 6, 0,0, 3,,A
+7, 7, 0,0, 3,,A
+
+[Begin action 7]
+8, 0, 0,0, 3,,A
+8, 1, 0,0, 3,,A
+8, 2, 0,0, 3,,A
+8, 3, 0,0, 3,,A
+8, 4, 0,0, 3,,A
+8, 5, 0,0, 3,,A
+8, 6, 0,0, 3,,A
+8, 7, 0,0, 3,,A
+
+[Begin action 6]
+-1, 0, 0,0, -1
+;---------------ash1 middle right
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = 565, 400
+delta = 1,1
+ID = 2
+
+[BGCtrlDef 1]
+ctrlID = 2
+looptime = 333
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -17
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 20,20,0
+
+;---------------ash2
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = 465, 400
+delta = 1,1
+ID = 3
+
+[BGCtrlDef 1]
+ctrlID = 3
+looptime = 252
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -15
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,20,0
+
+;---------------ash3
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = 665, 400
+delta = 1,1
+ID = 4
+
+[BGCtrlDef 1]
+ctrlID = 4
+looptime = 390
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -16
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 15,20,0
+
+
+;---------------ash4 right
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = 1200, 300
+delta = 1,1
+ID = 5
+
+[BGCtrlDef 1]
+ctrlID = 5
+looptime = 155
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -9
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 15,30,0
+
+
+;---------------ash5
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = 1100, 300
+delta = 1,1
+ID = 6
+
+[BGCtrlDef 1]
+ctrlID = 6
+looptime = 233
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -12
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,40,0
+
+;---------------ash6
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = 1300, 300
+delta = 1,1
+ID = 7
+
+[BGCtrlDef 1]
+ctrlID = 7
+looptime = 270
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -12
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,50,0
+
+
+;---------------ash7 middle
+
+[BG 0]
+type = anim
+actionno = 7
+layerno = 0
+start = -245, 390
+delta = 1,1
+ID = 8
+
+[BGCtrlDef 1]
+ctrlID = 8
+looptime = 122
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -9
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,50,0
+
+;---------------ash8
+
+[BG 0]
+type = anim
+actionno = 7
+layerno = 0
+start = -295, 390
+delta = 1,1
+ID = 9
+
+[BGCtrlDef 1]
+ctrlID = 9
+looptime = 190
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -9
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,40,0
+
+;---------------ash9
+
+[BG 0]
+type = anim
+actionno = 7
+layerno = 0
+start = 795, 390
+delta = 1,1
+ID = 10
+
+[BGCtrlDef 1]
+ctrlID = 10
+looptime = 210
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -6
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 15,30,0
+
+;---------------ash10 485
+
+[BG 0]
+type = anim
+actionno = 7
+layerno = 0
+start = -485, 390
+delta = 1,1
+ID = 11
+
+[BGCtrlDef 1]
+ctrlID = 11
+looptime = 147
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -9
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,50,0
+
+;---------------ash11
+
+[BG 0]
+type = anim
+actionno = 7
+layerno = 0
+start = -535, 390
+delta = 1,1
+ID = 12
+
+[BGCtrlDef 1]
+ctrlID = 12
+looptime = 180
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -9
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,40,0
+
+;---------------ash12
+
+[BG 0]
+type = anim
+actionno = 7
+layerno = 0
+start = -435, 390
+delta = 1,1
+ID = 13
+
+[BGCtrlDef 1]
+ctrlID = 13
+looptime = 235
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -6
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 15,30,0
+
+;---------------ash13 left
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = -825, 400
+delta = 1,1
+ID = 14
+
+[BGCtrlDef 1]
+ctrlID = 14
+looptime = 115
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -9
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 20,20,0
+
+;---------------ash14
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = -875, 400
+delta = 1,1
+ID = 15
+
+[BGCtrlDef 1]
+ctrlID = 15
+looptime = 205
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -7
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,20,0
+
+;---------------ash15
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = -775, 400
+delta = 1,1
+ID = 16
+
+[BGCtrlDef 1]
+ctrlID = 16
+looptime = 163
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 7
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -8
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 15,20,0
+
+;---------------ash13 left2
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = -1300, 300
+delta = 1,1
+ID = 17
+
+[BGCtrlDef 1]
+ctrlID = 17
+looptime = 138
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -12
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 20,20,0
+
+;---------------ash14
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = -1200, 300
+delta = 1,1
+ID = 18
+
+[BGCtrlDef 1]
+ctrlID = 18
+looptime = 218
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -10
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 10,20,0
+
+;---------------ash15
+
+[BG 0]
+type = anim
+actionno = 5
+layerno = 0
+start = -1100, 300
+delta = 1,1
+ID = 19
+
+[BGCtrlDef 1]
+ctrlID = 19
+looptime = 171
+
+[BGCtrl 1]
+type = anim
+time = 0
+value = 5
+
+[BGCtrl 1]
+type = anim
+time = 24
+value = 6
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y =0
+
+[BGCtrl 1]
+type = velset
+time = 0
+x = 0
+y = -11
+
+[BGCtrl 1]
+type = Sinx
+time = 0
+value = 15,20,0
+
+;-------------------------smoke
+[BG 0]
+type = anim
+actionno = 8
+layerno = 0
+start = 0, -800
+delta = 1,1
+tile = 1,0
+tilespacing = 600,0
+scalestart = 1.9,1.9
+
+[Begin action 8]
+9, 57, 0,0, 1,,AS5D256
+9, 58, 0,0, 1,,AS10D256
+9, 59, 0,0, 1,,AS15D256
+9, 60, 0,0, 1,,AS20D256
+9, 61, 0,0, 1,,AS25D256
+9, 62, 0,0, 1,,AS30D256
+9, 63, 0,0, 1,,AS35D256
+9, 64, 0,0, 1,,AS40D256
+9, 65, 0,0, 1,,AS45D256
+9, 66, 0,0, 1,,AS50D256
+9, 67, 0,0, 1,,AS55D256
+9, 68, 0,0, 1,,AS60D256
+9, 69, 0,0, 1,,AS65D256
+9, 70, 0,0, 1,,AS70D256
+9, 71, 0,0, 1,,AS75D256
+9, 72, 0,0, 1,,AS80D256
+9, 73, 0,0, 1,,AS85D256
+9, 74, 0,0, 1,,AS90D256
+9, 75, 0,0, 1,,AS95D256
+9, 76, 0,0, 1,,AS100D256
+9, 77, 0,0, 1,,AS105D256
+9, 78, 0,0, 1,,AS110D256
+9, 79, 0,0, 1,,AS115D256
+9, 80, 0,0, 1,,AS120D256
+9, 81, 0,0, 1,,AS120D256
+9, 82, 0,0, 1,,AS120D256
+9, 83, 0,0, 1,,AS120D256
+9, 84, 0,0, 1,,AS120D256
+9, 85, 0,0, 1,,AS115D256
+9, 86, 0,0, 1,,AS110D256
+9, 87, 0,0, 1,,AS105D256
+9, 88, 0,0, 1,,AS100D256
+9, 89, 0,0, 1,,AS95D256
+9, 90, 0,0, 1,,AS90D256
+9, 91, 0,0, 1,,AS85D256
+9, 92, 0,0, 1,,AS80D256
+9, 93, 0,0, 1,,AS75D256
+9, 94, 0,0, 1,,AS70D256
+9, 95, 0,0, 1,,AS65D256
+9, 96, 0,0, 1,,AS60D256
+9, 97, 0,0, 1,,AS55D256
+9, 98, 0,0, 1,,AS50D256
+9, 99, 0,0, 1,,AS45D256
+9, 100, 0,0, 1,,AS40D256
+9, 101, 0,0, 1,,AS35D256
+9, 102, 0,0, 1,,AS30D256
+9, 103, 0,0, 1,,AS25D256
+9, 104, 0,0, 1,,AS20D256
+9, 105, 0,0, 1,,AS15D256
+9, 106, 0,0, 1,,AS10D256
+9, 107, 0,0, 1,,AS5D256
+-1,0,0,0,6
+
+[BG 0]
+type = anim
+actionno = 9
+layerno = 0
+start = 0, -800
+delta = 1,1
+tile = 1,0
+tilespacing = 600,0
+scalestart = 1.9,1.9
+
+[Begin action 9]
+-1,0,0,0,29
+LOOPSTART
+9, 57, 0,0, 1,,AS5D256
+9, 58, 0,0, 1,,AS10D256
+9, 59, 0,0, 1,,AS15D256
+9, 60, 0,0, 1,,AS20D256
+9, 61, 0,0, 1,,AS25D256
+9, 62, 0,0, 1,,AS30D256
+9, 63, 0,0, 1,,AS35D256
+9, 64, 0,0, 1,,AS40D256
+9, 65, 0,0, 1,,AS45D256
+9, 66, 0,0, 1,,AS50D256
+9, 67, 0,0, 1,,AS55D256
+9, 68, 0,0, 1,,AS60D256
+9, 69, 0,0, 1,,AS65D256
+9, 70, 0,0, 1,,AS70D256
+9, 71, 0,0, 1,,AS75D256
+9, 72, 0,0, 1,,AS80D256
+9, 73, 0,0, 1,,AS85D256
+9, 74, 0,0, 1,,AS90D256
+9, 75, 0,0, 1,,AS95D256
+9, 76, 0,0, 1,,AS100D256
+9, 77, 0,0, 1,,AS105D256
+9, 78, 0,0, 1,,AS110D256
+9, 79, 0,0, 1,,AS115D256
+9, 80, 0,0, 1,,AS120D256
+9, 81, 0,0, 1,,AS120D256
+9, 82, 0,0, 1,,AS120D256
+9, 83, 0,0, 1,,AS120D256
+9, 84, 0,0, 1,,AS120D256
+9, 85, 0,0, 1,,AS115D256
+9, 86, 0,0, 1,,AS110D256
+9, 87, 0,0, 1,,AS105D256
+9, 88, 0,0, 1,,AS100D256
+9, 89, 0,0, 1,,AS95D256
+9, 90, 0,0, 1,,AS90D256
+9, 91, 0,0, 1,,AS85D256
+9, 92, 0,0, 1,,AS80D256
+9, 93, 0,0, 1,,AS75D256
+9, 94, 0,0, 1,,AS70D256
+9, 95, 0,0, 1,,AS65D256
+9, 96, 0,0, 1,,AS60D256
+9, 97, 0,0, 1,,AS55D256
+9, 98, 0,0, 1,,AS50D256
+9, 99, 0,0, 1,,AS45D256
+9, 100, 0,0, 1,,AS40D256
+9, 101, 0,0, 1,,AS35D256
+9, 102, 0,0, 1,,AS30D256
+9, 103, 0,0, 1,,AS25D256
+9, 104, 0,0, 1,,AS20D256
+9, 105, 0,0, 1,,AS15D256
+9, 106, 0,0, 1,,AS10D256
+9, 107, 0,0, 1,,AS5D256
+-1,0,0,0,6
+
+[BG 0]
+type = anim
+actionno = 10
+layerno = 0
+start = 214, -820
+delta = 1,1
+tile = 1,0
+tilespacing = 600,0
+scalestart = 1.9,1.9
+
+[Begin action 10]
+11, 0, 0,0, 1,,AS120D256
+11, 1, 0,0, 1,,AS120D256
+11, 2, 0,0, 1,,AS120D256
+11, 3, 0,0, 1,,AS120D256
+11, 4, 0,0, 1,,AS120D256
+11, 5, 0,0, 1,,AS120D256
+11, 6, 0,0, 1,,AS120D256
+11, 7, 0,0, 1,,AS120D256
+11, 8, 0,0, 1,,AS120D256
+11, 9, 0,0, 1,,AS120D256
+11, 10, 0,0, 1,,AS120D256
+11, 11, 0,0, 1,,AS120D256
+11, 12, 0,0, 1,,AS120D256
+11, 13, 0,0, 1,,AS120D256
+11, 14, 0,0, 1,,AS120D256
+11, 15, 0,0, 1,,AS120D256
+11, 16, 0,0, 1,,AS120D256
+11, 17, 0,0, 1,,AS120D256
+11, 18, 0,0, 1,,AS120D256
+11, 19, 0,0, 1,,AS120D256
+11, 20, 0,0, 1,,AS120D256
+11, 21, 0,0, 1,,AS120D256
+11, 22, 0,0, 1,,AS120D256
+
+[BG 0]
+type = anim
+actionno = 11
+layerno = 0
+start = 856,-786
+delta = 1,1
+tile = 1,0
+tilespacing = 600,0
+scalestart = 1.9,1.9
+
+[Begin action 11]
+11, 12, 0,0, 1,,AS120D256
+11, 13, 0,0, 1,,AS120D256
+11, 14, 0,0, 1,,AS120D256
+11, 15, 0,0, 1,,AS120D256
+11, 16, 0,0, 1,,AS120D256
+11, 17, 0,0, 1,,AS120D256
+11, 18, 0,0, 1,,AS120D256
+11, 19, 0,0, 1,,AS120D256
+11, 20, 0,0, 1,,AS120D256
+11, 21, 0,0, 1,,AS120D256
+11, 22, 0,0, 1,,AS120D256
+11, 0, 0,0, 1,,AS120D256
+11, 1, 0,0, 1,,AS120D256
+11, 2, 0,0, 1,,AS120D256
+11, 3, 0,0, 1,,AS120D256
+11, 4, 0,0, 1,,AS120D256
+11, 5, 0,0, 1,,AS120D256
+11, 6, 0,0, 1,,AS120D256
+11, 7, 0,0, 1,,AS120D256
+11, 8, 0,0, 1,,AS120D256
+11, 9, 0,0, 1,,AS120D256
+11, 10, 0,0, 1,,AS120D256
+11, 11, 0,0, 1,,AS120D256

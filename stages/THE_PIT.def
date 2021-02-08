@@ -1,0 +1,145 @@
+;                        EDITED STAGE
+;=============================================================
+;  STAGE INFORMATION :
+;
+;  Resolution : 1280 * 720
+;  Mugen Version : Mugen 1.1 only
+;  Versiondate : Septiembre,2014
+;  Reedicion : Daniel's 
+;
+;=============================================================
+
+
+
+[Info]
+name = "THE PIT"
+displayname="THE PIT"
+mugenversion = 1.1
+author = "NoZ"
+;ReEdit   = "********-----Remake by Daniel's-------******" 
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -1270
+boundright =  1270
+boundhigh = -700
+boundlow 	= 0
+tension = 200
+verticalfollow = .75
+floortension = 400
+overdrawhigh = 120
+overdrawlow = 120
+cuthigh = 35
+cutlow = 25
+tensionhigh = 560
+tensionlow = 90
+zoomin = .9
+zoomout = .48
+
+
+[PlayerInfo]
+p1startx 	= -280
+p1starty 	= 0
+p1facing 	= 1
+p2startx 	= 280
+p2starty 	= 0
+p2facing 	= -1
+p3startx 	= -400
+p3starty 	= 0
+p3facing 	= 1
+p4startx 	= 400
+p4starty 	= 0
+p4facing 	= -1
+leftbound = -4000
+rightbound = 4000
+
+[Bound]
+screenleft = 60
+screenright =60
+
+[StageInfo]
+zoffset 	= 560
+autoturn 	= 1
+resetBG 	= 0
+localcoord = 1280, 720
+xscale= 1
+yscale = 1
+
+[Scaling]
+topz  = 0
+botz  = 50
+topscale 	= 1
+botscale 	= 1.2
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+
+[Music]
+bgmusic = sound/THE_PIT.mp3
+bgmvolume 	= 255
+
+[BGdef]
+spr = THE_PIT.sff
+debugbg 	= 0
+
+[BG SKY]
+type = normal
+spriteno = 0, 2
+start = 0,-1980
+delta = 1,1
+mask = 1
+tile = 1,1
+
+[BG CLOUDS]
+type = normal
+spriteno = 1,0
+start = 0,-1980
+delta = .1, .5
+zoomdelta = .1
+mask = 1
+
+[BG MOON]
+type = normal
+spriteno = 0, 3
+start = 0,-1860
+delta = .15,.6
+zoomdelta = .3 
+mask = 1
+
+[BG CLOUDS2]
+type = normal
+spriteno = 1,2
+start = 0,-1980
+delta = .15,.6
+zoomdelta = .3 
+mask = 1
+tile = 1,0
+velocity = .5, 0
+
+[BG CLOUDS3]
+type = normal
+spriteno = 1,1
+start = 0,-2500
+delta = .15,.6
+zoomdelta = .3 
+mask = 1
+tile = 1,0
+velocity = .8, 0
+
+[BG FLOOR]
+type = normal
+spriteno = 0, 0
+start = 0,-1980
+delta = 1,1
+MASK = 1
+
+
+[BG FOREGROUND]
+type = normal
+spriteno = 0, 1
+start = 0,-1980
+delta = 1,1
+layerno = 1
+mask = 1
